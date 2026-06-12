@@ -1,16 +1,87 @@
-# React + Vite
+# OTP Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that generates a random 6-digit One-Time Password (OTP) and automatically expires it after 5 seconds.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Generate random 6-digit OTPs
+* 5-second countdown timer
+* Automatic OTP expiration
+* Button disabled while OTP is active
+* Generate a new OTP after expiration
+* Built using React Hooks
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* JavaScript (ES6+)
+* CSS
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Clone the repository
+
+```bash
+git clone https://github.com/your-username/otp-generator.git
+```
+
+### Navigate to the project
+
+```bash
+cd otp-generator
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal to view the application.
+
+## Project Structure
+
+```text
+src/
+├── App.jsx
+├── App.css
+├── index.css
+├── main.jsx
+└── otp-generator.jsx
+```
+
+## How It Works
+
+1. Click the **Generate OTP** button.
+2. A random 6-digit OTP is generated.
+3. A 5-second countdown begins.
+4. The button is disabled during the countdown.
+5. When the timer reaches zero, the OTP expires.
+6. The button becomes available again to generate a new OTP.
+
+## Learning Concepts
+
+This project demonstrates:
+
+* React Components
+* useState Hook
+* useEffect Hook
+* useRef Hook
+* Event Handling
+* Conditional Rendering
+* Timer Management with setInterval and clearInterval
+
+## Author
+
+Ayush
+
+## License
+
+This project is for educational purposes.
